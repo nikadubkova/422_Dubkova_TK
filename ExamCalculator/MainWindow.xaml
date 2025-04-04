@@ -1,0 +1,23 @@
+﻿<Window x:Class="ExamCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamCalculator"
+        mc:Ignorable="d"
+        Title="Калькулятор экзаменационных баллов" Height="303" Width="300" Background="#E6E6FA">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Задание №1 (макс. 10 баллов):"/>
+            <TextBox x:Name="Score1TextBox"/>
+            <Label Content="Задание №2 (макс. 50 баллов):"/>
+            <TextBox x:Name="Score2TextBox"/>
+            <Label Content="Задание №3 (макс. 30 баллов):"/>
+            <TextBox x:Name="Score3TextBox"/>
+            <Label Content="Задание №4 (макс. 10 баллов):"/>
+            <TextBox x:Name="Score4TextBox"/>
+            <Label x:Name="ResultLabel" Content=""/>
+            <Button x:Name="CalculateButton" Content="Вычислить оценку" Background="#EE82EE" Click="CalculateButton_Click" Width="120"/>
+        </StackPanel>
+    </Grid>
+</Window>
